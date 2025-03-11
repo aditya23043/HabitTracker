@@ -19,3 +19,8 @@ git clone https://github.com/aditya23043/HabitTracker
 cd HabitTracker/src/
 flutter run
 ```
+
+## Development Log
+
+https://github.com/user-attachments/assets/feccc307-7559-4280-9202-71d7ec9dbc61
+
