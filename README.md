@@ -26,7 +26,8 @@ flutter run
 - moved from a single stateful widget to multiple smaller stateful widgets so that they are more manageable
 - but facing a bug -> multiple dates being "highlighted" when tapped on
 - this issue was caused because I had local shallow copies of the variable focussed_index
-  https://github.com/user-attachments/assets/feccc307-7559-4280-9202-71d7ec9dbc61
+
+https://github.com/user-attachments/assets/feccc307-7559-4280-9202-71d7ec9dbc61
 
 - Did a big brain bug solve
 - Take this case:
@@ -37,4 +38,5 @@ flutter run
     - Widget A: DateWidget
     - Widget B: TaskWidget
     - Widget C: HomePage
+
 https://github.com/user-attachments/assets/a9b4add0-de1f-465c-949c-b4313506bfa9
