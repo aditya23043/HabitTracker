@@ -12,11 +12,15 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   ScrollController scrollController = ScrollController();
-  int focussed_node_index = DateTime.now().day - 1;
-
   final double container_width = 80;
-
+  int focussed_node_index = DateTime.now().day - 1;
   List<Node> list_nodes = <Node>[];
+
+  void change_date(int index) {
+    setState(() {
+      focussed_node_index = list_nodes.elementAt(index).date.day - 1;
+    });
+  }
 
   @override
   initState() {
@@ -63,8 +67,9 @@ class _HomePageState extends State<HomePage> {
               DateWidget(
                 scrollController: scrollController,
                 list_nodes: list_nodes,
-                focussed_node_index: focussed_node_index,
                 container_width: container_width,
+                focussed_node_index: focussed_node_index,
+                change_date: change_date,
               ),
               SizedBox(height: 50),
               TaskWidget(

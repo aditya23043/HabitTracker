@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:habbit_trackere/home_page.dart';
 import 'package:habbit_trackere/node.dart';
 
 class TaskWidget extends StatefulWidget {
   List<Node> list_nodes;
-  final int focussed_node_index;
+  int focussed_node_index;
 
   TaskWidget({
     required this.list_nodes,
